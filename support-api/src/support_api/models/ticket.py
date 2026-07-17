@@ -12,7 +12,7 @@ class Ticket(BaseModel):
 
     model_config = ConfigDict(extra="forbid") # prevent any extra properties from being included in the declaration of this object
 
-    id: str = Field(pattern=r"^TKT-\d{5}$")
+    id: str = Field(pattern=r"^TKT-\d{5}$") 
     title: str = Field(min_length=5, max_length=200)
     body: str = Field(min_length=1)
     priority: Priority
@@ -25,3 +25,29 @@ class Ticket(BaseModel):
     tags: list[str] = Field(default_factory=list, max_length=10)
     created_at: datetime
     updated_at: datetime
+
+if __name__ == "__main__":
+    import json
+    from pathlib import Path
+    from pydantic import ValidationError
+    from support_api.filters import load_tickets
+
+    raw_ticket = load_tickets()[0]
+
+    # Valid input returns a ticket instance
+    ticket = Ticket.model_validate(raw_ticket)
+    # print(f"Valid: id={ticket.id}   priority={ticket.priority}")
+    # print(f"Type of priority field: {type(ticket.priority).__name__}")
+
+    # model_dump serializes back to a dict
+    dumped = ticket.model_dump()
+    # print(f"Dumped keys: {sorted(dumped.keys())}")
+    # print(f"Entire model dict: {dumped}")
+
+    # Invalid input raising a structured error
+    try:
+        Ticket.model_validate({**raw_ticket, "priority": "blocker"}) # this a correct ticket in terms of keys, but priority is wrong
+    except ValidationError as err:
+        print("Validation error raised with:")
+        for detail in err.errors():
+            print(f"    loc={detail["loc"]}     type={detail["type"]}       msg={detail["msg"]}")

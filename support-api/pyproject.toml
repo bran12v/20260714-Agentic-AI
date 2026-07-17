@@ -3,7 +3,10 @@ name = "support-api"
 version = "0.1.0"
 description = "Customer Support Intelligence Platform — backend service."
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "pydantic>=2.10",
+    "structlog>=24.4",
+]
 
 [project.optional-dependencies]
 dev = [
@@ -11,7 +14,6 @@ dev = [
     "pytest-asyncio>=0.25",
     "ruff>=0.8",
     "mypy>=1.13",
-    "pydantic>=2.10"
 ]
 
 [build-system]
