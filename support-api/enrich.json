@@ -1,0 +1,456 @@
+[
+  {
+    "id": "TKT-10001",
+    "title": "Invoice shows duplicate charge for April seats",
+    "body": "Hi team - our April invoice (INV-2026-04-88421) shows two line items of $4,200 for the exact same seat pack. Pretty sure we only added 14 seats, not 28. Can someone look into this before our AP cutoff on the 25th? Happy to send screenshots.",
+    "priority": "high",
+    "status": "in_progress",
+    "category": "billing",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10001",
+    "assignee": "billing-team-lead",
+    "channel": "email",
+    "tags": [
+      "invoice",
+      "duplicate-charge",
+      "q2-billing"
+    ],
+    "created_at": "2026-04-18T14:22:31Z",
+    "updated_at": "2026-04-21T09:47:15Z",
+    "enrichment": {
+      "customer_id": "CUS-10001"
+    }
+  },
+  {
+    "id": "TKT-10002",
+    "title": "API returning 429 on /v2/exports despite low call volume",
+    "body": "We're hitting 429 Too Many Requests on POST /api/v2/exports even though we're well under the documented 60 rpm limit. Retry-After header says 47 seconds. This started around 2026-04-19 08:00 UTC. Running from our us-east prod cluster. Example request id: req_8f3d2a1c9e.",
+    "priority": "high",
+    "status": "open",
+    "category": "technical",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10002",
+    "assignee": "tier2-tech",
+    "channel": "portal",
+    "tags": [
+      "api-rate-limit",
+      "429",
+      "exports",
+      "us-east"
+    ],
+    "created_at": "2026-04-20T11:08:54Z",
+    "updated_at": "2026-04-21T16:22:09Z",
+    "enrichment": {
+      "customer_id": "CUS-10002"
+    }
+  },
+  {
+    "id": "TKT-10003",
+    "title": "Need to remove departing employee immediately",
+    "body": "Employee separation today, effective 5pm ET. Please remove user jsmith@meridiancap.com from all access and transfer owned reports to tscott@meridiancap.com. This is a terminated-for-cause situation so please treat as urgent. Confirm once done.",
+    "priority": "urgent",
+    "status": "resolved",
+    "category": "account",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10003",
+    "assignee": "alice@support.acme-corp.com",
+    "channel": "phone",
+    "tags": [
+      "offboarding",
+      "urgent",
+      "access-removal",
+      "ownership-transfer"
+    ],
+    "created_at": "2026-04-14T18:33:12Z",
+    "updated_at": "2026-04-14T21:04:58Z",
+    "enrichment": {
+      "customer_id": "CUS-10003"
+    }
+  },
+  {
+    "id": "TKT-10004",
+    "title": "How do I schedule a recurring CSV export?",
+    "body": "Hi - new admin here. I've figured out how to run a one-off export but I need it to run every Monday at 6am and drop into our SFTP. Is there a docs page on this? Couldn't find one that matched the current UI. Thanks!",
+    "priority": "low",
+    "status": "waiting_on_customer",
+    "category": "general",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10004",
+    "assignee": null,
+    "channel": "chat",
+    "tags": [
+      "how-to",
+      "scheduled-exports",
+      "sftp"
+    ],
+    "created_at": "2026-04-17T10:15:42Z",
+    "updated_at": "2026-04-19T13:28:07Z",
+    "enrichment": {
+      "customer_id": "CUS-10004"
+    }
+  },
+  {
+    "id": "TKT-10005",
+    "title": "Dashboard takes 45+ seconds to load",
+    "body": "The operations dashboard has become unusable since last Tuesday. Load times are 45-90 seconds and sometimes it times out entirely. Three of us are seeing the same thing, all on Chrome 124. I've tried incognito and it's a bit better but still 20+ seconds. Nothing changed on our end that we know of.",
+    "priority": "high",
+    "status": "in_progress",
+    "category": "technical",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10005",
+    "assignee": "tier2-tech",
+    "channel": "email",
+    "tags": [
+      "performance",
+      "dashboard",
+      "chrome",
+      "saved-filters"
+    ],
+    "created_at": "2026-04-16T09:51:20Z",
+    "updated_at": "2026-04-21T11:14:33Z",
+    "enrichment": {
+      "customer_id": "CUS-10005"
+    }
+  },
+  {
+    "id": "TKT-10006",
+    "title": "VP escalation: SSO outage blocking go-live",
+    "body": "This is Janelle Okafor, VP Infrastructure at Pinnacle. Our SSO integration stopped issuing SAML assertions at 6:04am ET this morning and we have 1,200 clinical users locked out. We have a board-visible go-live at noon. I need someone on a bridge call in the next 30 minutes. Calling my CSM now as well.",
+    "priority": "urgent",
+    "status": "in_progress",
+    "category": "account",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10006",
+    "assignee": "enterprise-oncall",
+    "channel": "phone",
+    "tags": [
+      "sso",
+      "saml",
+      "outage",
+      "vp-escalation",
+      "healthcare"
+    ],
+    "created_at": "2026-04-21T10:18:02Z",
+    "updated_at": "2026-04-21T17:33:44Z",
+    "enrichment": {
+      "customer_id": "CUS-10006"
+    }
+  },
+  {
+    "id": "TKT-10007",
+    "title": "password reset link expired before I could click it",
+    "body": "i keep trying to reset my password but by the time i open the email the link says expired. this is the fourth time. can you just reset it manually or extend the link ttl? my email is admin@bluepeak.app. thanks",
+    "priority": "normal",
+    "status": "open",
+    "category": "account",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10007",
+    "assignee": null,
+    "channel": "portal",
+    "tags": [
+      "password-reset",
+      "email-delay",
+      "link-expired"
+    ],
+    "created_at": "2026-04-21T08:42:55Z",
+    "updated_at": "2026-04-21T08:42:55Z",
+    "enrichment": {
+      "customer_id": "CUS-10007"
+    }
+  },
+  {
+    "id": "TKT-10008",
+    "title": "Webhook not firing for ticket.updated events",
+    "body": "Our webhook endpoint (https://ironcladsec.com/webhooks/support) is receiving ticket.created but not ticket.updated. Config has both events subscribed. Checked signature verification on our side - we're not rejecting anything, we're just not receiving the payloads. Dashboard shows 0 delivery attempts for ticket.updated in the last 7 days.",
+    "priority": "high",
+    "status": "open",
+    "category": "technical",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10008",
+    "assignee": null,
+    "channel": "email",
+    "tags": [
+      "webhooks",
+      "ticket.updated",
+      "integration",
+      "missing-events"
+    ],
+    "created_at": "2026-04-20T15:27:41Z",
+    "updated_at": "2026-04-20T15:27:41Z",
+    "enrichment": {
+      "customer_id": "CUS-10008"
+    }
+  },
+  {
+    "id": "TKT-10009",
+    "title": "Charge on 4/15 shouldn't have happened. Refund.",
+    "body": "We downgraded to starter on April 3rd. You still charged us the business-tier $499 on April 15th. Refund and fix the billing.",
+    "priority": "normal",
+    "status": "in_progress",
+    "category": "billing",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10009",
+    "assignee": null,
+    "channel": "email",
+    "tags": [
+      "refund-request",
+      "downgrade",
+      "plan-change"
+    ],
+    "created_at": "2026-04-16T07:12:08Z",
+    "updated_at": "2026-04-19T10:45:22Z",
+    "enrichment": {
+      "customer_id": "CUS-10009"
+    }
+  },
+  {
+    "id": "TKT-10010",
+    "title": "Enable SSO for our Okta tenant",
+    "body": "Hi - we're ready to enable SAML SSO for Evergreen Energy (tenant id acme-corp-evergreen). IdP is Okta. Our IT lead, Kai Wilson, can provide the metadata XML whenever your team is ready. We've read the KB article but would prefer a 15-minute call to walk through it on our side. Available times attached.",
+    "priority": "normal",
+    "status": "waiting_on_customer",
+    "category": "account",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10010",
+    "assignee": "enterprise-onboarding",
+    "channel": "email",
+    "tags": [
+      "sso-setup",
+      "okta",
+      "saml",
+      "onboarding"
+    ],
+    "created_at": "2026-04-15T13:04:19Z",
+    "updated_at": "2026-04-18T16:21:55Z",
+    "enrichment": {
+      "customer_id": "CUS-10010"
+    }
+  },
+  {
+    "id": "TKT-10011",
+    "title": "Is there a dark mode?",
+    "body": "Quick question - is there a dark mode for the dashboard? Working late and the white background is killing my eyes. If not, is it on the roadmap?",
+    "priority": "low",
+    "status": "closed",
+    "category": "general",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10011",
+    "assignee": null,
+    "channel": "chat",
+    "tags": [
+      "feature-request",
+      "ui",
+      "accessibility"
+    ],
+    "created_at": "2026-04-11T22:47:33Z",
+    "updated_at": "2026-04-12T14:08:11Z",
+    "enrichment": {
+      "customer_id": "CUS-10011"
+    }
+  },
+  {
+    "id": "TKT-10012",
+    "title": "Annual invoice line items don't match contract",
+    "body": "Our signed order form from December lists 45 enterprise seats at $2,100/seat/year with a 12% discount. The invoice received yesterday shows 45 seats at $2,100 but with only a 9% discount applied. That's a $2,835 discrepancy. Attaching the executed order form. Please correct and reissue before our AP deadline.",
+    "priority": "high",
+    "status": "open",
+    "category": "billing",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10012",
+    "assignee": "billing-team-lead",
+    "channel": "email",
+    "tags": [
+      "invoice-dispute",
+      "discount-applied",
+      "annual-billing",
+      "contract-mismatch"
+    ],
+    "created_at": "2026-04-20T09:33:47Z",
+    "updated_at": "2026-04-21T15:02:18Z",
+    "enrichment": {
+      "customer_id": "CUS-10012"
+    }
+  },
+  {
+    "id": "TKT-10013",
+    "title": "2FA codes not being received on company phones",
+    "body": "Since the maintenance window on 4/19, none of our users are receiving 2FA SMS codes on company-issued phones (Verizon carrier). Personal phones work fine. We've reset the 2FA setup for two test users - same result. Email codes arrive instantly. Is there something on the SMS provider side?",
+    "priority": "high",
+    "status": "in_progress",
+    "category": "account",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10001",
+    "assignee": "tier2-tech",
+    "channel": "portal",
+    "tags": [
+      "2fa",
+      "sms-delivery",
+      "verizon",
+      "maintenance-window"
+    ],
+    "created_at": "2026-04-20T11:52:26Z",
+    "updated_at": "2026-04-21T14:17:39Z",
+    "enrichment": {
+      "customer_id": "CUS-10001"
+    }
+  },
+  {
+    "id": "TKT-10014",
+    "title": "Training session for new ops team",
+    "body": "Hi - we've hired 6 new ops analysts and I'd like to get them onboarded with a formal training session rather than the self-serve materials. Is this included in our business plan or does it need to be purchased separately? Ideally we'd do it in May.",
+    "priority": "low",
+    "status": "open",
+    "category": "general",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10002",
+    "assignee": null,
+    "channel": "email",
+    "tags": [
+      "training-request",
+      "onboarding",
+      "customer-success"
+    ],
+    "created_at": "2026-04-19T14:28:15Z",
+    "updated_at": "2026-04-19T14:28:15Z",
+    "enrichment": {
+      "customer_id": "CUS-10002"
+    }
+  },
+  {
+    "id": "TKT-10015",
+    "title": "Getting 401 Unauthorized on previously working API key",
+    "body": "Our prod API key (last 4: ...7a2f) started returning 401 Unauthorized this morning at approximately 04:20 UTC. The key was working fine yesterday. I've confirmed no one on our team rotated it. Can you check if something happened on your side (revocation, tenant migration, etc)?",
+    "priority": "urgent",
+    "status": "resolved",
+    "category": "technical",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10003",
+    "assignee": "tier2-tech",
+    "channel": "phone",
+    "tags": [
+      "401",
+      "api-key",
+      "auth",
+      "production-impact"
+    ],
+    "created_at": "2026-04-17T05:14:02Z",
+    "updated_at": "2026-04-17T08:42:28Z",
+    "enrichment": {
+      "customer_id": "CUS-10003"
+    }
+  },
+  {
+    "id": "TKT-10016",
+    "title": "Mobile app crashes when opening ticket attachments",
+    "body": "iOS mobile app (v4.12.1, iPhone 15 Pro, iOS 17.4) crashes every time I tap an attachment on a ticket. Works fine on my iPad and on the web. This has been happening for about a week. Happy to share a crash log if you tell me where to find it.",
+    "priority": "normal",
+    "status": "open",
+    "category": "technical",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10004",
+    "assignee": null,
+    "channel": "chat",
+    "tags": [
+      "mobile-app",
+      "ios",
+      "crash",
+      "attachments"
+    ],
+    "created_at": "2026-04-18T19:33:08Z",
+    "updated_at": "2026-04-18T19:33:08Z",
+    "enrichment": {
+      "customer_id": "CUS-10004"
+    }
+  },
+  {
+    "id": "TKT-10017",
+    "title": "Tax ID update needed on billing profile",
+    "body": "We registered a new legal entity on April 1 and need to update our tax ID / VAT number on the billing profile from 87-1234567 to 92-7654321. Please advise on what documentation you need. Also - will this trigger re-issuance of our March invoice?",
+    "priority": "normal",
+    "status": "waiting_on_customer",
+    "category": "billing",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10005",
+    "assignee": "billing-team-lead",
+    "channel": "email",
+    "tags": [
+      "tax-id",
+      "billing-profile",
+      "entity-change",
+      "invoice-reissue"
+    ],
+    "created_at": "2026-04-13T11:22:37Z",
+    "updated_at": "2026-04-16T09:51:04Z",
+    "enrichment": {
+      "customer_id": "CUS-10005"
+    }
+  },
+  {
+    "id": "TKT-10018",
+    "title": "Where are the pgvector extension docs?",
+    "body": "Hi support - we saw in your April release notes that pgvector is now available for enterprise customers to query embeddings directly. Couldn't find the docs on the endpoint shape. Is there a preview guide available? We'd like to pilot it on our clinical notes corpus.",
+    "priority": "low",
+    "status": "open",
+    "category": "general",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10006",
+    "assignee": null,
+    "channel": "portal",
+    "tags": [
+      "documentation-request",
+      "pgvector",
+      "preview-feature",
+      "rag"
+    ],
+    "created_at": "2026-04-20T16:48:11Z",
+    "updated_at": "2026-04-20T16:48:11Z",
+    "enrichment": {
+      "customer_id": "CUS-10006"
+    }
+  },
+  {
+    "id": "TKT-10019",
+    "title": "This is the third time I've contacted support about this",
+    "body": "I am beyond frustrated. This is the THIRD time I've opened a ticket about the same issue - my team role assignments revert after 24 hours. Previous tickets were TKT-09988 and TKT-09903, both marked resolved, neither actually resolved. I want this escalated today. Not tomorrow.",
+    "priority": "high",
+    "status": "open",
+    "category": "account",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10007",
+    "assignee": "tier2-tech",
+    "channel": "email",
+    "tags": [
+      "repeat-issue",
+      "role-assignment",
+      "escalation",
+      "regression"
+    ],
+    "created_at": "2026-04-21T07:28:49Z",
+    "updated_at": "2026-04-21T12:14:02Z",
+    "enrichment": {
+      "customer_id": "CUS-10007"
+    }
+  },
+  {
+    "id": "TKT-10020",
+    "title": "Question about prorated charges on mid-month upgrade",
+    "body": "Hi team - could you please help me understand how prorated charges work? We upgraded from business to enterprise on 2026-03-18 and the invoice line items are confusing. There's a credit for $1,240 and a charge for $4,680. Is that net-new amount correct for a half-month upgrade on 24 seats? Would appreciate a breakdown.",
+    "priority": "normal",
+    "status": "resolved",
+    "category": "billing",
+    "tenant": "acme-corp",
+    "customer_id": "CUS-10008",
+    "assignee": "billing-team-lead",
+    "channel": "email",
+    "tags": [
+      "proration",
+      "upgrade",
+      "invoice-explanation"
+    ],
+    "created_at": "2026-04-10T13:42:55Z",
+    "updated_at": "2026-04-12T10:08:17Z",
+    "enrichment": {
+      "customer_id": "CUS-10008"
+    }
+  }
+]

@@ -1,6 +1,8 @@
 pyproject.toml
 src/support_api/__init__.py
+src/support_api/enrich.py
 src/support_api/filters.py
+src/support_api/logging.py
 src/support_api/routing_rules.py
 src/support_api/stream.py
 src/support_api/utils.py
@@ -13,4 +15,6 @@ src/support_api/models/__init__.py
 src/support_api/models/customer.py
 src/support_api/models/ticket.py
 tests/test_filters.py
+tests/test_models.py
 tests/test_routing_rules.py
+tests/test_utils.py
